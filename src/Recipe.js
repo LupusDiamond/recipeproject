@@ -5,7 +5,7 @@ const Recipe = ({title, calories, image, ingredients}) => {
     return (
         <div className={style.recipe}>
             <h1>{title}</h1>
-            <p>Calories: {calories}</p>
+            <p>Calories: {calories.toFixed(2)}</p>
             <div className={style.cont}>
                 <img className={style.image} src={image} alt=""/>
                 <div>
